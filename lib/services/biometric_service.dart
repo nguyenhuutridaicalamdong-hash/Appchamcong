@@ -21,7 +21,7 @@ class BiometricService {
       if (!available) return false;
 
       return await _auth.authenticate(
-        localizedReason: 'Vui lòng nhìn vào cảm biến khuôn mặt để xác thực đăng nhập',
+        localizedReason: 'Vui lòng xác thực vân tay hoặc khuôn mặt để đăng nhập',
         biometricOnly: true,
       );
     } catch (_) {

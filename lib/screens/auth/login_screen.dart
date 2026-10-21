@@ -313,12 +313,12 @@ class _LoginScreenState extends State<LoginScreen> {
             mainAxisSize: MainAxisSize.min,
             children: [
               const Text(
-                'Nhận Diện Khuôn Mặt (Face ID)',
+                'Xác Thực Vân Tay / Khuôn Mặt',
                 style: TextStyle(fontWeight: FontWeight.w800, fontSize: 18),
               ),
               const SizedBox(height: 8),
               const Text(
-                'Vui lòng hướng khuôn mặt vào chính giữa camera',
+                'Vui lòng chạm vào cảm biến vân tay hoặc hướng khuôn mặt vào camera',
                 textAlign: TextAlign.center,
                 style: TextStyle(fontSize: 12, color: AppTheme.textSecondary),
               ),
@@ -530,7 +530,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                   const SizedBox(height: 12),
 
-                  // NÚT ĐĂNG NHẬP BẰNG KHUÔN MẶT (FACE ID)
+                  // NÚT ĐĂNG NHẬP BẰNG SINH TRẮC HỌC (VÂN TAY / KHUÔN MẶT)
                   OutlinedButton.icon(
                     style: OutlinedButton.styleFrom(
                       minimumSize: const Size(double.infinity, 48),
@@ -538,9 +538,9 @@ class _LoginScreenState extends State<LoginScreen> {
                       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
                     ),
                     onPressed: _handleFaceLogin,
-                    icon: const Icon(Icons.face_retouching_natural_rounded, color: AppTheme.primary),
+                    icon: const Icon(Icons.fingerprint_rounded, color: AppTheme.primary, size: 22),
                     label: const Text(
-                      'Đăng nhập bằng Khuôn mặt (Face ID)',
+                      'Đăng nhập bằng Vân tay / Khuôn mặt',
                       style: TextStyle(color: AppTheme.primary, fontWeight: FontWeight.w700),
                     ),
                   ),
