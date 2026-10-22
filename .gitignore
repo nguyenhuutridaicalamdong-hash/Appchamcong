@@ -54,3 +54,7 @@ app.*.map.json
 *.user
 *.suo
 
+# Tunneling Tools
+tools/
+*.exe
+

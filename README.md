@@ -48,7 +48,8 @@ Hệ thống quản lý điểm danh và chấm công thông minh dành cho doan
    ```
 3. Bấm **F5** để khởi chạy API. 
 4. Trình duyệt sẽ tự động mở giao diện **Swagger UI** tại:
-   - `http://localhost:5184/swagger`
+   - Local: `http://localhost:5184/swagger`
+   - **Link Public Online (Cloudflare HTTPS):** `https://posted-obtain-evaluating-goto.trycloudflare.com/swagger`
    *(Hệ thống đã tích hợp `AppDbContext.Database.EnsureCreated()` và nạp sẵn tài khoản mẫu, không cần chạy migration thủ công).*
 
 ### 2. Khởi chạy Ứng dụng Di động (Flutter)
